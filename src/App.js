@@ -1,11 +1,17 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navigation from "./components/Navigation";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div>
-      This is the main app component
-      <div className="h1">hiya </div>
-    </div>
+    <>
+      <Navigation></Navigation>
+      <Home></Home>
+      <Footer></Footer>
+    </>
   );
 };
 
