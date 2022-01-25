@@ -1,5 +1,15 @@
 import React from "react";
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  Container,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+  Row,
+  Col,
+} from "react-bootstrap";
 const Navigation = () => {
   return (
     <>
@@ -13,11 +23,36 @@ const Navigation = () => {
           >
             <Navbar.Text>
               <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link>Catalog</Nav.Link>
+                <Form className="d-flex">
+                  <Row className="align-items-center">
+                    <Col sm={3} className="my-1">
+                      <FormControl
+                        type="email"
+                        placeholder="Enter email"
+                        className="me-2"
+                        aria-label="Search"
+                      />
+                    </Col>
+                    <Col sm={3} className="my-1">
+                      <Form.Control type="password" placeholder="Password" />
+                    </Col>
+                    <Col xs="auto" className="my-1">
+                      <Form.Check
+                        type="checkbox"
+                        id="autoSizingCheck2"
+                        label="Remember me"
+                      />
+                    </Col>
+                    <Col xs="auto" className="my-1">
+                      <Button type="submit">Submit</Button>
+                    </Col>
+                    <Col xs="auto" className="my-1">
+                      <Nav.Link href="#home">Forgot Password</Nav.Link>
+                    </Col>
+                  </Row>
+                </Form>
 
-                <Nav.Link href="#link">Link</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown title="More" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#catalog">Catalog</NavDropdown.Item>
                   <NavDropdown.Item href="#inperson">
                     In Person Learning
@@ -38,6 +73,8 @@ const Navigation = () => {
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action/3.4">Log In</NavDropdown.Item>
                 </NavDropdown>
+
+                <Nav.Link href="#home">Home</Nav.Link>
               </Nav>
             </Navbar.Text>
           </Navbar.Collapse>
