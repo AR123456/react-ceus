@@ -172,13 +172,7 @@ const Home = () => {
           </Card>
         </CardGroup>
         <CardGroup>
-          <Card>
-            <CardImg
-              alt="Card image cap"
-              src="https://picsum.photos/318/180"
-              top
-              width="100%"
-            />
+          <Card className="text-center">
             <CardBody>
               <CardTitle tag="h5">Testimonials</CardTitle>
               {/* <CardSubtitle className="mb-2 text-muted" tag="h6">
