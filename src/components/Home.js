@@ -31,7 +31,6 @@ const Home = () => {
                 Looking for in person opportunites ?
               </CardSubtitle>
               <CardText>See what we have in your area</CardText>
-
               <Link to="/inperson">
                 <Button>In Person</Button>
               </Link>
@@ -39,8 +38,9 @@ const Home = () => {
           </Card>
           <Card>
             <CardImg
+              className="rounded-circle"
               alt="Card image cap"
-              src="https://picsum.photos/318/180"
+              src="https://picsum.photos/200/200"
               top
               width="100%"
             />
@@ -53,7 +53,9 @@ const Home = () => {
                 Browse our currated list of articles to study and test out for
                 CEUs.
               </CardText>
-              <Button>Button</Button>
+              <Link to="/ondemand">
+                <Button>On Demand</Button>
+              </Link>
             </CardBody>
           </Card>
           <Card>
