@@ -1,5 +1,10 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Switch,
+} from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "./components/Navigation";
@@ -11,11 +16,24 @@ import WebinarClasses from "./pages/WebinarClasses";
 
 const App = () => {
   return (
-    <>
-      <Navigation></Navigation>
-      <Home></Home>
-      <Footer></Footer>
-    </>
+    <Router>
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={
+            <>
+              <Navigation></Navigation>
+              <Home></Home>
+              <Footer></Footer>
+            </>
+          }
+        ></Route>
+        <Route exact path="/inperson" element={<InPersonClasses />} />
+        <Route exact path="/ondemand" element={<OnDemandClasses />} />
+        <Route exact path="/webinar" element={<WebinarClasses />} />
+      </Routes>
+    </Router>
   );
 };
 

@@ -10,6 +10,7 @@ import {
   CardText,
   Button,
 } from "reactstrap";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -18,8 +19,9 @@ const Home = () => {
         <CardGroup>
           <Card>
             <CardImg
+              className="rounded-circle"
               alt="Card image cap"
-              src="https://picsum.photos/318/180"
+              src="https://picsum.photos/180/180"
               top
               width="100%"
             />
@@ -28,8 +30,11 @@ const Home = () => {
               <CardSubtitle className="mb-2 text-muted" tag="h6">
                 Looking for in person opportunites ?
               </CardSubtitle>
-              <CardText>See what we have in your arean</CardText>
-              <Button>Button</Button>
+              <CardText>See what we have in your area</CardText>
+
+              <Link to="/inperson">
+                <Button>In Person</Button>
+              </Link>
             </CardBody>
           </Card>
           <Card>
