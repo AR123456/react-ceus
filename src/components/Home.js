@@ -60,8 +60,9 @@ const Home = () => {
           </Card>
           <Card>
             <CardImg
+              className="rounded-circle"
               alt="Card image cap"
-              src="https://picsum.photos/318/180"
+              src="https://picsum.photos/300/300"
               top
               width="100%"
             />
@@ -73,7 +74,9 @@ const Home = () => {
               <CardText>
                 Full offering of interactive web based CEU classes .
               </CardText>
-              <Button>Button</Button>
+              <Link to="/webinar">
+                <Button>Webinars</Button>
+              </Link>
             </CardBody>
           </Card>
         </CardGroup>
@@ -120,8 +123,9 @@ const Home = () => {
         <CardGroup>
           <Card>
             <CardImg
+              className="rounded-circle"
               alt="Card image cap"
-              src="https://picsum.photos/318/180"
+              src="https://picsum.photos/180/180"
               top
               width="100%"
             />
@@ -135,13 +139,16 @@ const Home = () => {
                 lead-in to additional content. This content is a little bit
                 longer.
               </CardText> */}
-              <Button>Button</Button>
+              <Link to="/inperson">
+                <Button>In Person</Button>
+              </Link>
             </CardBody>
           </Card>
           <Card>
             <CardImg
+              className="rounded-circle"
               alt="Card image cap"
-              src="https://picsum.photos/318/180"
+              src="https://picsum.photos/200/200"
               top
               width="100%"
             />
@@ -154,13 +161,16 @@ const Home = () => {
                 This card has supporting text below as a natural lead-in to
                 additional content.
               </CardText> */}
-              <Button>Button</Button>
+              <Link to="/ondemand">
+                <Button>Articles</Button>
+              </Link>
             </CardBody>
           </Card>
           <Card>
             <CardImg
+              className="rounded-circle"
               alt="Card image cap"
-              src="https://picsum.photos/318/180"
+              src="https://picsum.photos/300/300"
               top
               width="100%"
             />
@@ -174,7 +184,9 @@ const Home = () => {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText> */}
-              <Button>Button</Button>
+              <Link to="/webinar">
+                <Button>Webinars</Button>
+              </Link>
             </CardBody>
           </Card>
         </CardGroup>
