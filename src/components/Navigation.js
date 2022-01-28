@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { SiChinaeasternairlines } from "react-icons/si";
 import {
   Navbar,
@@ -13,7 +14,9 @@ import {
   Collapse,
   NavItem,
   NavLink,
+  Button,
 } from "reactstrap";
+import LogInForm from "./LogInForm";
 const Navigation = () => {
   return (
     <>
@@ -25,27 +28,48 @@ const Navigation = () => {
           <NavbarToggler onClick={function noRefCheck() {}} />
           <Collapse navbar>
             <Nav className="me-auto" navbar>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
+              </NavItem> */}
+              {/* <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">
                   GitHub
-                </NavLink>
-              </NavItem>
+                </NavLink> */}
+              {/* </NavItem> */}
               <UncontrolledDropdown inNavbar nav>
                 <DropdownToggle caret nav>
-                  Options
+                  Menu
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
+                  <DropdownItem>
+                    {" "}
+                    <Link to="/inperson">
+                      <Button>In Person</Button>
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/webinar">
+                      <Button>Webinar</Button>
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    {" "}
+                    <Link to="/ondemand">
+                      <Button>Articles</Button>
+                    </Link>
+                  </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
+                  <DropdownItem>
+                    {" "}
+                    <Link to="/">
+                      <Button>Home</Button>
+                    </Link>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
-            <NavbarText>Simple Text</NavbarText>
+            <LogInForm></LogInForm>
+            {/* <NavbarText>Simple Text</NavbarText> */}
           </Collapse>
         </Navbar>
       </div>
