@@ -11,6 +11,8 @@ import {
   Button,
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import { GiTeacher } from "react-icons/gi";
+import { GrArticle, GrVirtualMachine } from "react-icons/gr";
 
 const Home = () => {
   return (
@@ -120,70 +122,30 @@ const Home = () => {
             </CardBody>
           </Card>
         </CardGroup>
-        <CardGroup>
-          <Card>
-            <CardImg
-              className="rounded-circle"
-              alt="Card image cap"
-              src="https://picsum.photos/180/180"
-              top
-              width="100%"
-            />
+        <CardGroup className="text-center ">
+          <Card className="rounded-circle">
             <CardBody>
+              <GiTeacher size={200}></GiTeacher>
               <CardTitle tag="h5">Live </CardTitle>
-              {/* <CardSubtitle className="mb-2 text-muted" tag="h6">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText> */}
               <Link to="/inperson">
                 <Button>In Person</Button>
               </Link>
             </CardBody>
           </Card>
-          <Card>
-            <CardImg
-              className="rounded-circle"
-              alt="Card image cap"
-              src="https://picsum.photos/200/200"
-              top
-              width="100%"
-            />
+          <Card className="rounded-circle">
             <CardBody>
+              <GrArticle size={200}></GrArticle>
               <CardTitle tag="h5">Articles</CardTitle>
-              {/* <CardSubtitle className="mb-2 text-muted" tag="h6">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This card has supporting text below as a natural lead-in to
-                additional content.
-              </CardText> */}
               <Link to="/ondemand">
                 <Button>Articles</Button>
               </Link>
             </CardBody>
           </Card>
-          <Card>
-            <CardImg
-              className="rounded-circle"
-              alt="Card image cap"
-              src="https://picsum.photos/300/300"
-              top
-              width="100%"
-            />
+          <Card className="rounded-circle">
             <CardBody>
+              <GrVirtualMachine size={200}></GrVirtualMachine>
               <CardTitle tag="h5">Remote Leaning</CardTitle>
-              {/* <CardSubtitle className="mb-2 text-muted" tag="h6">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </CardText> */}
+
               <Link to="/webinar">
                 <Button>Webinars</Button>
               </Link>
@@ -199,14 +161,14 @@ const Home = () => {
               </CardSubtitle> */}
               <CardText>
                 <iframe
-                  title="Approching"
-                  width="400"
-                  height="300"
-                  src="https://www.youtube.com/embed/qulqm3WDwC4?list=UUQqnLXLhmulg9RafT5ervlg"
+                  width="872"
+                  height="400"
+                  src="https://www.youtube.com/embed/E3XsWHZGHTo?list=RDWpVR9uusaQY"
+                  title="YouTube video player"
                   frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
-                />
+                ></iframe>
               </CardText>
               <Button>Button</Button>
             </CardBody>

@@ -1,4 +1,5 @@
 import React from "react";
+import { SiChinaeasternairlines } from "react-icons/si";
 import {
   Navbar,
   Nav,
@@ -18,7 +19,9 @@ const Navigation = () => {
     <>
       <div>
         <Navbar color="light" expand="md" light>
-          <NavbarBrand href="/">CEUs for All </NavbarBrand>
+          <NavbarBrand href="/">
+            <SiChinaeasternairlines size={70} /> CEUs for All{" "}
+          </NavbarBrand>
           <NavbarToggler onClick={function noRefCheck() {}} />
           <Collapse navbar>
             <Nav className="me-auto" navbar>
