@@ -1,7 +1,7 @@
 {
+  "homepage": "https://ar123456.github.io/react-ceus/",
   "name": "react-ceus",
   "version": "0.1.0",
-  "homepage": "https://ar123456.github.io/react-ceus/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -19,6 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
