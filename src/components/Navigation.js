@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SiChinaeasternairlines } from "react-icons/si";
+import { BsCart, BsCartCheck } from "react-icons/bs";
 import {
   Navbar,
   Nav,
@@ -71,6 +72,8 @@ const Navigation = () => {
             <LogInForm></LogInForm>
             {/* <NavbarText>Simple Text</NavbarText> */}
           </Collapse>
+          <BsCart size={40}></BsCart>
+          {/* if stuff in chart <BsCartCheck size={40} /> */}
         </Navbar>
       </div>
     </>

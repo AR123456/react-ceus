@@ -1,12 +1,18 @@
 import React from "react";
 import { Container, Col, Row, Card, Navbar } from "reactstrap";
+import { FaFacebookF } from "react-icons/fa";
+import { CgTwitter } from "react-icons/cg";
+import { AiFillCopyrightCircle } from "react-icons/ai";
+import { SiGnuprivacyguard } from "react-icons/si";
 
 const Footer = () => {
   return (
     <>
       <Container>
         <Row>
-          <Col className="bg-light border">Copyright 2022</Col>
+          <Col className="bg-light border">
+            <AiFillCopyrightCircle></AiFillCopyrightCircle> 2022
+          </Col>
         </Row>
         <Row>
           {/* <Col className="bg-light border">.col</Col>
@@ -17,10 +23,12 @@ const Footer = () => {
 
         <Row>
           <Col className="bg-light border" xs="6">
+            <SiGnuprivacyguard></SiGnuprivacyguard>
             Privacy Policy
           </Col>
-          <Col className="bg-light border" xs="6">
-            Social
+          <Col className="bg-light border " xs="6">
+            <FaFacebookF></FaFacebookF>
+            <CgTwitter></CgTwitter>
           </Col>
         </Row>
       </Container>
