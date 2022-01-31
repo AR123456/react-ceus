@@ -20,7 +20,6 @@ const WebinarClasses = () => {
           {/* <div className="container-fluid bg-light text-dark p-5"> */}
           {/* <div className="container bg-light p-5"> */}
           <h1 className="display-4 fw-bold">List of webinars </h1>
-          {/* implement filtering based on description search  */}
           <Input
             id="exampleSearch"
             name="search"
