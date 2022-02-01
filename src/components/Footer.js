@@ -21,12 +21,12 @@ const Footer = () => {
           <Col className="bg-light border">.col</Col> */}
         </Row>
 
-        <Row>
-          <Col className="bg-light border" xs="6">
+        <Row className="bg-light border">
+          <Col xs="6">
             <SiGnuprivacyguard></SiGnuprivacyguard>
             Privacy Policy
           </Col>
-          <Col className="bg-light border " xs="6">
+          <Col className="text-end" xs="6">
             <FaFacebookF></FaFacebookF>
             <CgTwitter></CgTwitter>
           </Col>
