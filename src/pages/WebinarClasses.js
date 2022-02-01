@@ -7,6 +7,9 @@ import {
   Button,
   Input,
   InputGroup,
+  ListGroup,
+  ListGroupItem,
+  PopoverHeader,
 } from "reactstrap";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
@@ -65,12 +68,24 @@ const WebinarClasses = () => {
                     trigger="click"
                   >
                     <PopoverBody>
-                      Sequence for donning and doffing personal protective
-                      equipment (PPE) Donning and doffing is the practice of
-                      employees putting on and removing work-related protective
-                      gear, clothing, and uniforms. Donning refers to putting on
-                      work clothes, gear, and equipment, while doffing means
-                      removing them.
+                      <PopoverHeader>
+                        <h4>Description</h4>
+                        Sequence for donning and doffing personal protective
+                        equipment (PPE) Donning and doffing is the practice of
+                        employees putting on and removing work-related
+                        protective gear, clothing, and uniforms. Donning refers
+                        to putting on work clothes, gear, and equipment, while
+                        doffing means removing them.
+                      </PopoverHeader>
+
+                      <ListGroup numbered>
+                        <h4>Includes</h4>
+                        <ListGroupItem>Cras justo odio</ListGroupItem>
+                        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
+                        <ListGroupItem>Morbi leo risus</ListGroupItem>
+                        <ListGroupItem>Porta ac consectetur ac</ListGroupItem>
+                        <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                      </ListGroup>
                     </PopoverBody>
                   </UncontrolledPopover>
                 </td>
@@ -98,16 +113,7 @@ const WebinarClasses = () => {
                     target="PopoverFocus"
                     // trigger="focus"
                     trigger="click"
-                  >
-                    <PopoverBody>
-                      Sequence for donning and doffing personal protective
-                      equipment (PPE) Donning and doffing is the practice of
-                      employees putting on and removing work-related protective
-                      gear, clothing, and uniforms. Donning refers to putting on
-                      work clothes, gear, and equipment, while doffing means
-                      removing them.
-                    </PopoverBody>
-                  </UncontrolledPopover>
+                  ></UncontrolledPopover>
                 </td>
               </tr>
               <tr>
@@ -133,16 +139,7 @@ const WebinarClasses = () => {
                     target="PopoverFocus"
                     // trigger="focus"
                     trigger="click"
-                  >
-                    <PopoverBody>
-                      Sequence for donning and doffing personal protective
-                      equipment (PPE) Donning and doffing is the practice of
-                      employees putting on and removing work-related protective
-                      gear, clothing, and uniforms. Donning refers to putting on
-                      work clothes, gear, and equipment, while doffing means
-                      removing them.
-                    </PopoverBody>
-                  </UncontrolledPopover>
+                  ></UncontrolledPopover>
                 </td>
               </tr>
             </tbody>

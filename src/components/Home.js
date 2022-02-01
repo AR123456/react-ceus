@@ -52,7 +52,7 @@ const Home = () => {
                 Do on your own time
               </CardSubtitle>
               <CardText>
-                Browse our currated list of articles to study and test out for
+                Browse our curated list of articles to study and test out for
                 CEUs.
               </CardText>
               <Link to="/ondemand">
@@ -74,7 +74,7 @@ const Home = () => {
                 Zoom into our classrooms
               </CardSubtitle>
               <CardText>
-                Full offering of interactive web based CEU classes .
+                Full offering of interactive web based CEU classes.
               </CardText>
               <Link to="/webinar">
                 <Button>Webinars</Button>
