@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import InPersonClasses from "./pages/InPersonClasses";
 import OnDemandClasses from "./pages/OnDemandClasses";
 import WebinarClasses from "./pages/WebinarClasses";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route exact path="/inperson" element={<InPersonClasses />} />
         <Route exact path="/ondemand" element={<OnDemandClasses />} />
         <Route exact path="/webinar" element={<WebinarClasses />} />
+        <Route exact path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
     </Router>
   );

@@ -10,9 +10,7 @@ const Jumbotron = () => {
           <div className="h-100 p-5 bg-light border rounded-3">
             <div className="container-fluid bg-light text-dark p-5">
               <div className="container bg-light p-5">
-                <h1 className="display-4 fw-bold">
-                  Something to dynamicaly generate goes here{" "}
-                </h1>
+                <h1 className="display-4 fw-bold"></h1>
               </div>
             </div>
           </div>

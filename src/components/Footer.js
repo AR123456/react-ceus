@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Col, Row, Card, Navbar } from "reactstrap";
 import { FaFacebookF } from "react-icons/fa";
 import { CgTwitter } from "react-icons/cg";
@@ -22,15 +23,19 @@ const Footer = () => {
         </Row>
 
         <Row className="bg-light border">
-          <Col xs="6">
-            <SiGnuprivacyguard></SiGnuprivacyguard>
-            Privacy Policy
-          </Col>
+          <Link to="/privacy">
+            <Col xs="6">
+              <SiGnuprivacyguard></SiGnuprivacyguard>
+              Privacy Policy
+            </Col>{" "}
+          </Link>
+
           <Col className="text-end" xs="6">
             <FaFacebookF></FaFacebookF>
             <CgTwitter></CgTwitter>
           </Col>
         </Row>
+        <br></br>
       </Container>
     </>
   );
