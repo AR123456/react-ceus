@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
-import { Col, Row, Card, Navbar } from "reactstrap";
+import { Container, Card } from "react-bootstrap";
+import { Col, Row, Navbar } from "reactstrap";
 import { FaFacebookF } from "react-icons/fa";
 import { CgTwitter } from "react-icons/cg";
 import { AiFillCopyrightCircle } from "react-icons/ai";
