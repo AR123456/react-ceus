@@ -2,44 +2,45 @@ import React from "react";
 import {
   Container,
   Form,
+  FormGroup,
   Col,
-  InputGroup,
+  Input,
   Label,
   FormText,
   Button,
-} from "react-bootstrap";
+} from "reactstrap";
 const LogInForm = () => {
   return (
     <>
       <Form>
-        <Form.Group row>
+        <FormGroup row>
           {/* <Label for="exampleEmail" sm={2}>
             Email
           </Label> */}
           <Col sm={10}>
-            <InputGroup
+            <Input
               id="exampleEmail"
               name="email"
               placeholder="Email Address"
               type="email"
             />
           </Col>
-        </Form.Group>
-        <Form.Group row>
+        </FormGroup>
+        <FormGroup row>
           {/* <Label for="examplePassword" sm={2}>
             Password
           </Label> */}
           <Col sm={10}>
-            <InputGroup
+            <Input
               id="examplePassword"
               name="password"
               placeholder="*******"
               type="password"
             />
           </Col>
-        </Form.Group>
+        </FormGroup>
 
-        <Form.Group row>
+        <FormGroup row>
           <Col
             sm={{
               offset: 2,
@@ -48,7 +49,7 @@ const LogInForm = () => {
           >
             <Button>Log In </Button>
           </Col>
-        </Form.Group>
+        </FormGroup>
       </Form>
     </>
   );

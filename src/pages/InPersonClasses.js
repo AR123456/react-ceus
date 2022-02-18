@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container } from "reactstrap";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 const InPersonClasses = () => {

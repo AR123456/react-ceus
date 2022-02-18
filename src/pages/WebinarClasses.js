@@ -2,15 +2,15 @@ import React from "react";
 import {
   Container,
   Table,
-  Popover,
+  UncontrolledPopover,
   PopoverBody,
   Button,
+  Input,
   InputGroup,
-  InputGroupGroup,
   ListGroup,
   ListGroupItem,
   PopoverHeader,
-} from "react-bootstrap";
+} from "reactstrap";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
@@ -24,7 +24,7 @@ const WebinarClasses = () => {
           {/* <div className="container bg-light p-5"> */}
           <h1 className="display-4 fw-bold">List of webinars </h1>
           {/* implement filtering based on description search  */}
-          <InputGroup
+          <Input
             id="exampleSearch"
             name="search"
             placeholder="Search all webinars"
@@ -46,9 +46,9 @@ const WebinarClasses = () => {
               <tr>
                 <th scope="row">
                   {" "}
-                  <InputGroup
+                  <Input
                     addon
-                    aria-label="Checkbox for following text InputGroup"
+                    aria-label="Checkbox for following text input"
                     type="checkbox"
                   />
                 </th>
@@ -61,7 +61,7 @@ const WebinarClasses = () => {
                   <Button id="PopoverFocus" type="button">
                     Click for more info
                   </Button>{" "}
-                  <Popover
+                  <UncontrolledPopover
                     placement="bottom"
                     target="PopoverFocus"
                     // trigger="focus"
@@ -87,15 +87,15 @@ const WebinarClasses = () => {
                         <ListGroupItem>Vestibulum at eros</ListGroupItem>
                       </ListGroup>
                     </PopoverBody>
-                  </Popover>
+                  </UncontrolledPopover>
                 </td>
               </tr>
               <tr>
                 <th scope="row">
                   {" "}
-                  <InputGroup
+                  <Input
                     addon
-                    aria-label="Checkbox for following text InputGroup"
+                    aria-label="Checkbox for following text input"
                     type="checkbox"
                   />
                 </th>
@@ -108,20 +108,20 @@ const WebinarClasses = () => {
                   <Button id="PopoverFocus" type="button">
                     Click for more info
                   </Button>{" "}
-                  <Popover
+                  <UncontrolledPopover
                     placement="bottom"
                     target="PopoverFocus"
                     // trigger="focus"
                     trigger="click"
-                  ></Popover>
+                  ></UncontrolledPopover>
                 </td>
               </tr>
               <tr>
                 <th scope="row">
                   {" "}
-                  <InputGroup
+                  <Input
                     addon
-                    aria-label="Checkbox for following text InputGroup"
+                    aria-label="Checkbox for following text input"
                     type="checkbox"
                   />
                 </th>
@@ -134,12 +134,12 @@ const WebinarClasses = () => {
                   <Button id="PopoverFocus" type="button">
                     Click for more info
                   </Button>{" "}
-                  <Popover
+                  <UncontrolledPopover
                     placement="bottom"
                     target="PopoverFocus"
                     // trigger="focus"
                     trigger="click"
-                  ></Popover>
+                  ></UncontrolledPopover>
                 </td>
               </tr>
             </tbody>

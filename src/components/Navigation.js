@@ -5,24 +5,28 @@ import { BsCart, BsCartCheck } from "react-icons/bs";
 import {
   Navbar,
   Nav,
+  NavbarBrand,
   NavbarToggler,
-  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
   NavbarText,
   Collapse,
   NavItem,
   NavLink,
   Button,
-} from "react-bootstrap";
+} from "reactstrap";
 import LogInForm from "./LogInForm";
 const Navigation = () => {
   return (
     <>
       <div>
         <Navbar color="light" expand="md" light>
-          <Navbar.Brand href="/">
+          <NavbarBrand href="/">
             <SiChinaeasternairlines size={70} /> CEUs for All{" "}
-          </Navbar.Brand>
-          <Navbar.Toggler onClick={function noRefCheck() {}} />
+          </NavbarBrand>
+          <NavbarToggler onClick={function noRefCheck() {}} />
           <Collapse navbar>
             <Nav className="me-auto" navbar>
               {/* <NavItem>
@@ -33,37 +37,37 @@ const Navigation = () => {
                   GitHub
                 </NavLink> */}
               {/* </NavItem> */}
-              <Dropdown inNavbar nav>
-                <Dropdown caret nav>
+              <UncontrolledDropdown inNavbar nav>
+                <DropdownToggle caret nav>
                   Menu
-                </Dropdown>
-                <Dropdown.Menu right>
-                  <Dropdown.Item>
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
                     {" "}
                     <Link to="/inperson">
                       <Button>In Person</Button>
                     </Link>
-                  </Dropdown.Item>
-                  <Dropdown.Item>
+                  </DropdownItem>
+                  <DropdownItem>
                     <Link to="/webinar">
                       <Button>Webinar</Button>
                     </Link>
-                  </Dropdown.Item>
-                  <Dropdown.Item>
+                  </DropdownItem>
+                  <DropdownItem>
                     {" "}
                     <Link to="/ondemand">
                       <Button>Articles</Button>
                     </Link>
-                  </Dropdown.Item>
-                  <Dropdown.Item divider />
-                  <Dropdown.Item>
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
                     {" "}
                     <Link to="/">
                       <Button>Home</Button>
                     </Link>
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
             </Nav>
             <LogInForm></LogInForm>
             {/* <NavbarText>Simple Text</NavbarText> */}
