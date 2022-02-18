@@ -1,6 +1,6 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import {
-  Container,
   Card,
   CardGroup,
   CardImg,

@@ -1,5 +1,6 @@
 import React from "react";
-import { Container } from "reactstrap";
+import { Container } from "react-bootstrap";
+// import { Container } from "reactstrap";
 
 const Jumbotron = () => {
   return (
