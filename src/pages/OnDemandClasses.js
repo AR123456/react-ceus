@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, ListGroup, ListGroupItem } from "reactstrap";
+import { Container, ListGroup, ListGroupItem } from "react-bootstrap";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 

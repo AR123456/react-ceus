@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Card,
-  CardGroup,
-  CardImg,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardText,
-  Button,
-} from "reactstrap";
+import { Container, Card, CardGroup, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { GiTeacher } from "react-icons/gi";
 import { GrArticle, GrVirtualMachine } from "react-icons/gr";
@@ -20,146 +10,146 @@ const Home = () => {
       <Container>
         <CardGroup>
           <Card>
-            <CardImg
+            <Card.Img
               className="rounded-circle"
               alt="Card image cap"
               src="https://picsum.photos/180/180"
               top
               width="100%"
             />
-            <CardBody>
-              <CardTitle tag="h5">Inperson Classes</CardTitle>
-              <CardSubtitle className="mb-2 text-muted" tag="h6">
+            <Card.Body>
+              <Card.Title tag="h5">Inperson Classes</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted" tag="h6">
                 Looking for in person opportunites ?
-              </CardSubtitle>
-              <CardText>See what we have in your area</CardText>
+              </Card.Subtitle>
+              <Card.Text>See what we have in your area</Card.Text>
               <Link to="/inperson">
                 <Button>In Person</Button>
               </Link>
-            </CardBody>
+            </Card.Body>
           </Card>
           <Card>
-            <CardImg
+            <Card.Img
               className="rounded-circle"
               alt="Card image cap"
               src="https://picsum.photos/200/200"
               top
               width="100%"
             />
-            <CardBody>
-              <CardTitle tag="h5">On Demand Learning </CardTitle>
-              <CardSubtitle className="mb-2 text-muted" tag="h6">
+            <Card.Body>
+              <Card.Title tag="h5">On Demand Learning </Card.Title>
+              <Card.Subtitle className="mb-2 text-muted" tag="h6">
                 Do on your own time
-              </CardSubtitle>
-              <CardText>
+              </Card.Subtitle>
+              <Card.Text>
                 Browse our curated list of articles to study and test out for
                 CEUs.
-              </CardText>
+              </Card.Text>
               <Link to="/ondemand">
                 <Button>On Demand</Button>
               </Link>
-            </CardBody>
+            </Card.Body>
           </Card>
           <Card>
-            <CardImg
+            <Card.Img
               className="rounded-circle"
               alt="Card image cap"
               src="https://picsum.photos/300/300"
               top
               width="100%"
             />
-            <CardBody>
-              <CardTitle tag="h5">Webinars</CardTitle>
-              <CardSubtitle className="mb-2 text-muted" tag="h6">
+            <Card.Body>
+              <Card.Title tag="h5">Webinars</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted" tag="h6">
                 Zoom into our classrooms
-              </CardSubtitle>
-              <CardText>
+              </Card.Subtitle>
+              <Card.Text>
                 Full offering of interactive web based CEU classes.
-              </CardText>
+              </Card.Text>
               <Link to="/webinar">
                 <Button>Webinars</Button>
               </Link>
-            </CardBody>
+            </Card.Body>
           </Card>
         </CardGroup>
         <CardGroup>
           <Card>
-            <CardImg
+            <Card.Img
               alt="Card image cap"
               src="https://picsum.photos/318/180"
               top
               width="100%"
             />
-            <CardBody>
-              <CardTitle tag="h5">Who we are and what we do </CardTitle>
-              <CardSubtitle className="mb-2 text-muted" tag="h6">
+            <Card.Body>
+              <Card.Title tag="h5">Who we are and what we do </Card.Title>
+              <Card.Subtitle className="mb-2 text-muted" tag="h6">
                 CEUs when and where you need them
-              </CardSubtitle>
-              <CardText>
+              </Card.Subtitle>
+              <Card.Text>
                 Looking for flexable leaning opportunities? Go no further we
                 have just what you need. CEUs for all professions !
-              </CardText>
+              </Card.Text>
               <Button>Button</Button>
-            </CardBody>
+            </Card.Body>
           </Card>
 
           <Card>
-            <CardImg
+            <Card.Img
               alt="Card image cap"
               src="https://picsum.photos/318/180"
               top
               width="100%"
             />
-            <CardBody>
-              <CardTitle tag="h5">Hot and in demand </CardTitle>
-              <CardSubtitle className="mb-2 text-muted" tag="h6">
+            <Card.Body>
+              <Card.Title tag="h5">Hot and in demand </Card.Title>
+              <Card.Subtitle className="mb-2 text-muted" tag="h6">
                 Featured Class
-              </CardSubtitle>
-              <CardText>
+              </Card.Subtitle>
+              <Card.Text>
                 Learn with our experts about this relevant and timley topic
-              </CardText>
+              </Card.Text>
               <Button>Button</Button>
-            </CardBody>
+            </Card.Body>
           </Card>
         </CardGroup>
         <CardGroup className="text-center ">
           <Card className="rounded-circle">
-            <CardBody>
+            <Card.Body>
               <GiTeacher size={200}></GiTeacher>
-              <CardTitle tag="h5">Live </CardTitle>
+              <Card.Title tag="h5">Live </Card.Title>
               <Link to="/inperson">
                 <Button>In Person</Button>
               </Link>
-            </CardBody>
+            </Card.Body>
           </Card>
           <Card className="rounded-circle">
-            <CardBody>
+            <Card.Body>
               <GrArticle size={200}></GrArticle>
-              <CardTitle tag="h5">Articles</CardTitle>
+              <Card.Title tag="h5">Articles</Card.Title>
               <Link to="/ondemand">
                 <Button>Articles</Button>
               </Link>
-            </CardBody>
+            </Card.Body>
           </Card>
           <Card className="rounded-circle">
-            <CardBody>
+            <Card.Body>
               <GrVirtualMachine size={200}></GrVirtualMachine>
-              <CardTitle tag="h5">Remote Leaning</CardTitle>
+              <Card.Title tag="h5">Remote Leaning</Card.Title>
 
               <Link to="/webinar">
                 <Button>Webinars</Button>
               </Link>
-            </CardBody>
+            </Card.Body>
           </Card>
         </CardGroup>
         <CardGroup>
           <Card className="text-center">
-            <CardBody>
-              <CardTitle tag="h5">Testimonials</CardTitle>
+            <Card.Body>
+              <Card.Title tag="h5">Testimonials</Card.Title>
               {/* <CardSubtitle className="mb-2 text-muted" tag="h6">
                 Card subtitle
               </CardSubtitle> */}
-              <CardText>
+              <Card.Text>
                 <iframe
                   width="872"
                   height="400"
@@ -169,9 +159,9 @@ const Home = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
-              </CardText>
+              </Card.Text>
               <Button>Button</Button>
-            </CardBody>
+            </Card.Body>
           </Card>
         </CardGroup>
       </Container>
