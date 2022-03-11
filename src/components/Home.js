@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, CardGroup, Card } from "react-bootstrap";
-import { Button } from "reactstrap";
+import { Container, CardGroup, Card, Button } from "react-bootstrap";
+// import { Button } from "reactstrap";
 import { Link } from "react-router-dom";
 import { GiTeacher } from "react-icons/gi";
 import { GrArticle, GrVirtualMachine } from "react-icons/gr";
@@ -25,7 +25,7 @@ const Home = () => {
               </Card.Subtitle>
               <Card.Text>See what we have in your area</Card.Text>
               <Link to="/inperson">
-                <Button>In Person</Button>
+                <Button variant="secondary">In Person</Button>
               </Link>
             </Card.Body>
           </Card>
@@ -47,7 +47,7 @@ const Home = () => {
                 CEUs.
               </Card.Text>
               <Link to="/ondemand">
-                <Button>On Demand</Button>
+                <Button variant="secondary">On Demand</Button>
               </Link>
             </Card.Body>
           </Card>
@@ -68,7 +68,7 @@ const Home = () => {
                 Full offering of interactive web based CEU classes.
               </Card.Text>
               <Link to="/webinar">
-                <Button>Webinars</Button>
+                <Button variant="secondary">Webinars</Button>
               </Link>
             </Card.Body>
           </Card>
@@ -90,7 +90,7 @@ const Home = () => {
                 Looking for flexable leaning opportunities? Go no further we
                 have just what you need. CEUs for all professions !
               </Card.Text>
-              <Button>Button</Button>
+              <Button variant="secondary">Button</Button>
             </Card.Body>
           </Card>
 
@@ -109,7 +109,7 @@ const Home = () => {
               <Card.Text>
                 Learn with our experts about this relevant and timley topic
               </Card.Text>
-              <Button>Button</Button>
+              <Button variant="secondary">Button</Button>
             </Card.Body>
           </Card>
         </CardGroup>
@@ -119,7 +119,7 @@ const Home = () => {
               <GiTeacher size={200}></GiTeacher>
               <Card.Title tag="h5">Live </Card.Title>
               <Link to="/inperson">
-                <Button>In Person</Button>
+                <Button variant="secondary">In Person</Button>
               </Link>
             </Card.Body>
           </Card>
@@ -128,7 +128,7 @@ const Home = () => {
               <GrArticle size={200}></GrArticle>
               <Card.Title tag="h5">Articles</Card.Title>
               <Link to="/ondemand">
-                <Button>Articles</Button>
+                <Button variant="secondary">Articles</Button>
               </Link>
             </Card.Body>
           </Card>
@@ -138,7 +138,7 @@ const Home = () => {
               <Card.Title tag="h5">Remote Leaning</Card.Title>
 
               <Link to="/webinar">
-                <Button>Webinars</Button>
+                <Button variant="secondary">Webinars</Button>
               </Link>
             </Card.Body>
           </Card>
@@ -159,7 +159,7 @@ const Home = () => {
                   allowfullscreen
                 ></iframe>
               </Card.Text>
-              <Button>Button</Button>
+              <Button variant="secondary">Button</Button>
             </Card.Body>
           </Card>
         </CardGroup>

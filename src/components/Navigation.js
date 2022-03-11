@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { SiChinaeasternairlines } from "react-icons/si";
 import { BsCart, BsCartCheck } from "react-icons/bs";
@@ -15,7 +16,6 @@ import {
   Collapse,
   NavItem,
   NavLink,
-  Button,
 } from "reactstrap";
 import LogInForm from "./LogInForm";
 const Navigation = () => {
@@ -45,25 +45,25 @@ const Navigation = () => {
                   <DropdownItem>
                     {" "}
                     <Link to="/inperson">
-                      <Button>In Person</Button>
+                      <Button variant="secondary">In Person</Button>
                     </Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/webinar">
-                      <Button>Webinar</Button>
+                      <Button variant="secondary"> Webinar</Button>
                     </Link>
                   </DropdownItem>
                   <DropdownItem>
                     {" "}
                     <Link to="/ondemand">
-                      <Button>Articles</Button>
+                      <Button variant="secondary">Articles</Button>
                     </Link>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
                     {" "}
                     <Link to="/">
-                      <Button>Home</Button>
+                      <Button variant="secondary">Home</Button>
                     </Link>
                   </DropdownItem>
                 </DropdownMenu>

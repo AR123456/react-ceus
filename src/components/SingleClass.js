@@ -1,10 +1,9 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import {
   Table,
   UncontrolledPopover,
   PopoverBody,
-  Button,
   Input,
   InputGroup,
   ListGroup,
@@ -57,7 +56,7 @@ const SingleClass = () => {
                 <td>$65.00</td>
                 <td>Donning and Doffing PPE safely </td>
                 <td>
-                  <Button id="PopoverFocus" type="button">
+                  <Button variant="secondary" id="PopoverFocus" type="button">
                     Click for more info
                   </Button>{" "}
                   <UncontrolledPopover
@@ -104,7 +103,7 @@ const SingleClass = () => {
                 <td>$65.00</td>
                 <td>Donning and Doffing PPE safely </td>
                 <td>
-                  <Button id="PopoverFocus" type="button">
+                  <Button variant="secondary" id="PopoverFocus" type="button">
                     Click for more info
                   </Button>{" "}
                   <UncontrolledPopover
@@ -130,7 +129,7 @@ const SingleClass = () => {
                 <td>$65.00</td>
                 <td>Donning and Doffing PPE safely </td>
                 <td>
-                  <Button id="PopoverFocus" type="button">
+                  <Button variant="secondary" id="PopoverFocus" type="button">
                     Click for more info
                   </Button>{" "}
                   <UncontrolledPopover
@@ -144,7 +143,7 @@ const SingleClass = () => {
             </tbody>
           </Table>
           <InputGroup>
-            <Button>Add selected to cart</Button>
+            <Button variant="secondary">Add selected to cart</Button>
           </InputGroup>
         </div>
         <br />

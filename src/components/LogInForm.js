@@ -1,15 +1,7 @@
 import React from "react";
 
-import { Container } from "react-bootstrap";
-import {
-  Form,
-  FormGroup,
-  Col,
-  Input,
-  Label,
-  FormText,
-  Button,
-} from "reactstrap";
+import { Container, Button } from "react-bootstrap";
+import { Form, FormGroup, Col, Input, Label, FormText } from "reactstrap";
 const LogInForm = () => {
   return (
     <>
@@ -48,7 +40,7 @@ const LogInForm = () => {
               size: 10,
             }}
           >
-            <Button>Log In </Button>
+            <Button variant="secondary">Log In </Button>
           </Col>
         </FormGroup>
       </Form>
