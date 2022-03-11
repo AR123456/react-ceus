@@ -1,11 +1,15 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
 import {
+  Container,
+  Button,
   Table,
+  InputGroup,
+  FormControl,
+  FormCheck,
+} from "react-bootstrap";
+import {
   UncontrolledPopover,
   PopoverBody,
-  Input,
-  InputGroup,
   ListGroup,
   ListGroupItem,
   PopoverHeader,
@@ -22,7 +26,8 @@ const SingleClass = () => {
             Here show list of just web, on demand or in person based on page
           </h1>
           {/* implement filtering based on description search  */}
-          <Input
+
+          <FormControl
             id="exampleSearch"
             name="search"
             placeholder="Search all webinars"
@@ -44,11 +49,7 @@ const SingleClass = () => {
               <tr>
                 <th scope="row">
                   {" "}
-                  <Input
-                    addon
-                    aria-label="Checkbox for following text input"
-                    type="checkbox"
-                  />
+                  <FormCheck aria-label="Checkbox for following text input" />
                 </th>
                 <td>PPE Basics</td>
                 <td>1.2</td>
@@ -91,11 +92,7 @@ const SingleClass = () => {
               <tr>
                 <th scope="row">
                   {" "}
-                  <Input
-                    addon
-                    aria-label="Checkbox for following text input"
-                    type="checkbox"
-                  />
+                  <FormCheck aria-label="Checkbox for following text input" />
                 </th>
                 <td>PPE Basics</td>
                 <td>1.2</td>
@@ -117,11 +114,7 @@ const SingleClass = () => {
               <tr>
                 <th scope="row">
                   {" "}
-                  <Input
-                    addon
-                    aria-label="Checkbox for following text input"
-                    type="checkbox"
-                  />
+                  <FormCheck aria-label="Checkbox for following text input" />
                 </th>
                 <td>PPE Basics</td>
                 <td>1.2</td>
