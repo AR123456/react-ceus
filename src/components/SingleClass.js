@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Container,
   Button,
@@ -7,13 +8,7 @@ import {
   FormControl,
   FormCheck,
 } from "react-bootstrap";
-import {
-  UncontrolledPopover,
-  PopoverBody,
-  ListGroup,
-  ListGroupItem,
-  PopoverHeader,
-} from "reactstrap";
+
 const SingleClass = () => {
   return (
     <div>
@@ -58,35 +53,9 @@ const SingleClass = () => {
                 <td>Donning and Doffing PPE safely </td>
                 <td>
                   <Button variant="secondary" id="PopoverFocus" type="button">
-                    Click for more info
+                    Click for more info Implement Pop over here
                   </Button>{" "}
-                  <UncontrolledPopover
-                    placement="bottom"
-                    target="PopoverFocus"
-                    // trigger="focus"
-                    trigger="click"
-                  >
-                    <PopoverBody>
-                      <PopoverHeader>
-                        <h4>Description</h4>
-                        Sequence for donning and doffing personal protective
-                        equipment (PPE) Donning and doffing is the practice of
-                        employees putting on and removing work-related
-                        protective gear, clothing, and uniforms. Donning refers
-                        to putting on work clothes, gear, and equipment, while
-                        doffing means removing them.
-                      </PopoverHeader>
-
-                      <ListGroup numbered>
-                        <h4>Includes</h4>
-                        <ListGroupItem>Cras justo odio</ListGroupItem>
-                        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                        <ListGroupItem>Morbi leo risus</ListGroupItem>
-                        <ListGroupItem>Porta ac consectetur ac</ListGroupItem>
-                        <ListGroupItem>Vestibulum at eros</ListGroupItem>
-                      </ListGroup>
-                    </PopoverBody>
-                  </UncontrolledPopover>
+                  {/* <PopOver></PopOver> */}
                 </td>
               </tr>
               <tr>
@@ -103,12 +72,6 @@ const SingleClass = () => {
                   <Button variant="secondary" id="PopoverFocus" type="button">
                     Click for more info
                   </Button>{" "}
-                  <UncontrolledPopover
-                    placement="bottom"
-                    target="PopoverFocus"
-                    // trigger="focus"
-                    trigger="click"
-                  ></UncontrolledPopover>
                 </td>
               </tr>
               <tr>
@@ -125,12 +88,6 @@ const SingleClass = () => {
                   <Button variant="secondary" id="PopoverFocus" type="button">
                     Click for more info
                   </Button>{" "}
-                  <UncontrolledPopover
-                    placement="bottom"
-                    target="PopoverFocus"
-                    // trigger="focus"
-                    trigger="click"
-                  ></UncontrolledPopover>
                 </td>
               </tr>
             </tbody>

@@ -1,6 +1,6 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import { ListGroup, ListGroupItem } from "reactstrap";
+import { Container, ListGroup } from "react-bootstrap";
+
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
@@ -16,11 +16,11 @@ const OnDemandClasses = () => {
               {/* https://pubmed.ncbi.nlm.nih.gov/16885402/ */}
 
               <ListGroup>
-                <ListGroupItem>Cras justo odio</ListGroupItem>
-                <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                <ListGroupItem>Morbi leo risus</ListGroupItem>
-                <ListGroupItem>Porta ac consectetur ac</ListGroupItem>
-                <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                <ListGroup.Item>Cras justo odio</ListGroup.Item>
+                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+                <ListGroup.Item>Morbi leo risus</ListGroup.Item>
+                <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+                <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
               </ListGroup>
             </div>
           </div>
