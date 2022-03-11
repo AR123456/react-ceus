@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Container, Button } from "react-bootstrap";
-import { Form, FormGroup, Col, Input, Label, FormText } from "reactstrap";
+import { Container, Button, Col } from "react-bootstrap";
+import { Form, FormGroup, Input, Label, FormText } from "reactstrap";
 const LogInForm = () => {
   return (
     <>
