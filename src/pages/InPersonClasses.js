@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Form, FormControl, Button } from "react-bootstrap";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 const InPersonClasses = () => {
@@ -7,6 +7,15 @@ const InPersonClasses = () => {
     <>
       <Container>
         <Navigation></Navigation>
+
+        <Form center>
+          <FormControl
+            type="text"
+            placeholder="Search for In person classes"
+            className="mr-sm-2"
+          />
+          <Button variant="secondary">Search</Button>
+        </Form>
         <div className="h-100 p-5 bg-light border rounded-3">
           <div className="container-fluid bg-light text-dark p-5">
             <div className="container bg-light p-5">

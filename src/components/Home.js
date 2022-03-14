@@ -1,6 +1,15 @@
 import React from "react";
-import { Container, CardGroup, Card, Button } from "react-bootstrap";
-// import { Button } from "reactstrap";
+import {
+  Container,
+  CardGroup,
+  Card,
+  Button,
+  Form,
+  FormControl,
+  Col,
+  Row,
+} from "react-bootstrap";
+ 
 import { Link } from "react-router-dom";
 import { GiTeacher } from "react-icons/gi";
 import { GrArticle, GrVirtualMachine } from "react-icons/gr";
@@ -9,6 +18,18 @@ const Home = () => {
   return (
     <>
       <Container>
+        <Row>
+          <Col>
+            <Form center>
+              <FormControl
+                type="text"
+                placeholder="Search all offerings "
+                className="mr-sm-2"
+              />
+              <Button variant="secondary">Search</Button>
+            </Form>
+          </Col>
+        </Row>
         <CardGroup>
           <Card>
             <Card.Img
@@ -73,6 +94,7 @@ const Home = () => {
             </Card.Body>
           </Card>
         </CardGroup>
+
         <CardGroup>
           <Card>
             <Card.Img

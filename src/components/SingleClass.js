@@ -1,4 +1,5 @@
 import React from "react";
+// import PopOver from "./PopOver";
 
 import {
   Container,
@@ -7,6 +8,7 @@ import {
   InputGroup,
   FormControl,
   FormCheck,
+  Form,
 } from "react-bootstrap";
 
 const SingleClass = () => {
@@ -22,12 +24,14 @@ const SingleClass = () => {
           </h1>
           {/* implement filtering based on description search  */}
 
-          <FormControl
-            id="exampleSearch"
-            name="search"
-            placeholder="Search all webinars"
-            type="search"
-          />
+          <Form center>
+            <FormControl
+              type="text"
+              placeholder="Search for Webinars"
+              className="mr-sm-2"
+            />
+            <Button variant="secondary">Search</Button>
+          </Form>
           <Table responsive hover>
             <thead>
               <tr>
