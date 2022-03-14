@@ -14,6 +14,7 @@ import InPersonClasses from "./pages/InPersonClasses";
 import OnDemandClasses from "./pages/OnDemandClasses";
 import WebinarClasses from "./pages/WebinarClasses";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+ 
 
 const App = () => {
   return (

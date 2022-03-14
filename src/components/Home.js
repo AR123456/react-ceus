@@ -9,7 +9,7 @@ import {
   Col,
   Row,
 } from "react-bootstrap";
- 
+
 import { Link } from "react-router-dom";
 import { GiTeacher } from "react-icons/gi";
 import { GrArticle, GrVirtualMachine } from "react-icons/gr";
@@ -181,7 +181,7 @@ const Home = () => {
                   allowfullscreen
                 ></iframe>
               </Card.Text>
-              <Button variant="secondary">Button</Button>
+              {/* <Button variant="secondary">Button</Button> */}
             </Card.Body>
           </Card>
         </CardGroup>

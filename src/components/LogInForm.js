@@ -1,7 +1,14 @@
 import React from "react";
 
-import { Container, Button, Col } from "react-bootstrap";
-import { Form, FormGroup, Input, Label, FormText } from "reactstrap";
+import {
+  Container,
+  Button,
+  Col,
+  Form,
+  FormGroup,
+  FormControl,
+} from "react-bootstrap";
+// import { Form, FormGroup, Input, Label, FormText } from "reactstrap";
 const LogInForm = () => {
   return (
     <>
@@ -11,7 +18,7 @@ const LogInForm = () => {
             Email
           </Label> */}
           <Col sm={10}>
-            <Input
+            <FormControl
               id="exampleEmail"
               name="email"
               placeholder="Email Address"
@@ -24,7 +31,7 @@ const LogInForm = () => {
             Password
           </Label> */}
           <Col sm={10}>
-            <Input
+            <FormControl
               id="examplePassword"
               name="password"
               placeholder="*******"

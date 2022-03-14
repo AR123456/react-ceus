@@ -26,8 +26,8 @@ const Footer = () => {
         <Row className="bg-light border">
           <Link to="/privacy">
             <Col xs="6">
-              <SiGnuprivacyguard></SiGnuprivacyguard>
-              Privacy Policy
+              {" "}
+              <SiGnuprivacyguard></SiGnuprivacyguard> Privacy Policy
             </Col>{" "}
           </Link>
 

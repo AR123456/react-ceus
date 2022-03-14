@@ -5,6 +5,7 @@ import { SiChinaeasternairlines } from "react-icons/si";
 import { BsCart, BsCartCheck } from "react-icons/bs";
 
 import LogInForm from "./LogInForm";
+
 const Navigation = () => {
   return (
     <>
@@ -38,11 +39,13 @@ const Navigation = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-
-            <LogInForm inline></LogInForm>
+            <BsCart size={40}></BsCart>
           </Navbar.Collapse>
-          <BsCart size={40}></BsCart>
+          <LogInForm inline></LogInForm>
           {/* if stuff in chart <BsCartCheck size={40} /> */}
+          <Nav.Item>
+            <Button variant="secondary">Create Account</Button>
+          </Nav.Item>
         </Navbar>
       </div>
     </>
