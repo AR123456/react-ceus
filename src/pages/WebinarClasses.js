@@ -1,10 +1,16 @@
 import React from "react";
+import { CartState } from "../context/Context";
 
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import SingleClass from "../components/SingleClass";
 
 const WebinarClasses = () => {
+  const {
+    state: { ceus },
+  } = CartState();
+  console.log(ceus);
+
   return (
     <>
       <Navigation></Navigation>

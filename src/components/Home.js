@@ -1,4 +1,10 @@
 import React from "react";
+// importing cart state which is going to eventually go to single product to
+// render the products here may just end up using to make the search all products work.
+// for now will do this on the webinar page and filter it to just webinars
+import { CartState } from "../context/Context";
+import SingleClass from "./SingleClass";
+
 import {
   Container,
   CardGroup,
@@ -15,6 +21,10 @@ import { GiTeacher } from "react-icons/gi";
 import { GrArticle, GrVirtualMachine } from "react-icons/gr";
 
 const Home = () => {
+  const {
+    state: { ceus },
+  } = CartState();
+  // console.log(ceus);
   return (
     <>
       <Container>
