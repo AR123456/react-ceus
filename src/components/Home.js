@@ -3,7 +3,6 @@ import React from "react";
 // render the products here may just end up using to make the search all products work.
 // for now will do this on the webinar page and filter it to just webinars
 import { CartState } from "../context/Context";
-import SingleClass from "./SingleClass";
 
 import {
   Container,
