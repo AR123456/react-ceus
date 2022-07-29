@@ -1,3 +1,4 @@
+create fake DB using a JSON file -see brads MERN ecom for example
 Context to manage the state of the app
 
 this video may be short and helpfull reminder https://www.youtube.com/watch?v=gQ_l-1zpVBo
